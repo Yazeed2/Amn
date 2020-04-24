@@ -238,6 +238,26 @@ margin-left:40%
   border-radius: 2%;
   color:#707070;
   margin-right:40%;
+
+}
+.logos{ 
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+}
+.button {
+  background-color: #70B0B5;
+  height: 80%;
+  width:20%;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 30px;
+  
 }
 
 .uplading{
