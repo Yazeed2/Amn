@@ -7,6 +7,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: grayscale;
   background-color:#E5E5E5;
+  
 
 }
 
@@ -151,28 +152,9 @@ p code {
   grid-gap: 20px 20px;
   opacity: .8;
 }
-.Edit{
-  color:white;
-  background-color: green
-}
-.Delete{
-  color:white;
-  background-color: red
-}
 
 
 
-.slick-dots {
-  bottom: 15px;
-}
-
-.slide .ui.segment h1 {
-  font-size: 3rem;
-}
-
-.slide .ui.segment p {
-  font-size: 1.5rem;
-}
 
 .footer1{
   margin: center;
@@ -181,55 +163,14 @@ p code {
   color:white;
 }
 
-.k{
 
-  height: 20%;
-}
-
-
-.u{
-  margin:center;
-  font-size: large;
-}
 
 
 #root{
   background-color:rgb(245, 245, 245);
 }
 
-.Slide{
-  color:black;
-}
 
-.D{
-
-  height: 40%;
-margin-left:40%
-
-}
-
-.H{
-
-  height: 40%;
-margin-left:40%
-
-}
-
-
-.S{
-
-  height: 40%;
-margin-left:40%
-
-}
-
-.Se{
-  font-size: x-large;
-}
-
-.S1{
-  background-color: rgb(233, 231, 231);
-}
 
 .a{
  
@@ -242,41 +183,29 @@ margin-left:40%
 }
 .logos{ 
   display: grid; 
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr ;
+  margin-left: 40%;
 }
 .button {
   background-color: #70B0B5;
   height: 80%;
-  width:20%;
+  width:26%;
   border: none;
   color: white;
-  padding: 10px 20px;
+  padding: 20px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin: 4px 2px;
+  margin: 20px 50px;
   cursor: pointer;
   border-radius: 30px;
-  
-}
-
-.uplading{
- margin: 0% auto;
- height: 400px;
- text-align: center;
- width: 100%;
-}
-.submit{
-width: 5.3%;
-margin-left: 45%;
-font-size: large;
-}
-
-.print{
-  width: 5.3%;
-  margin-left: 45%;
+  font-family: 'Amiri', serif;
+  font-size: 150%;
 
 }
+
+
+
 /* .form{
  
 
@@ -288,31 +217,9 @@ font-size: large;
     margin-top: 9%  
 
 } */
-.form{
-  text-align: center;
-}
 
-.about{
-  background-color:#57afbe;
-  font-style: oblique;
-  padding : 5%;
-  border-radius: 2%;
-  color:white;
-}
-.about>h2{
-  font-size: 30px;
-  text-align: center;
-  padding-bottom: 30px;
-  
-}
 
-.mission{
-  background-color:#57afbe;
-  font-style: oblique;
-  padding : 5%;
-  border-radius: 2%;
-  color:white;
-}
+
 
 .signup{
 margin-top: 10%;
@@ -335,13 +242,6 @@ margin-top: 10%;
 
 }
 
-
-.em{
-  height: 50%;
-  width:100%;
-
-
-}
 
 .logo{
   height: 100px;
@@ -377,4 +277,14 @@ margin-top: 10%;
 .topnav a.active {
   background-color:#70B0B5;
   color: white;
+}
+
+.nav1{
+  align-items: left;
+}
+
+
+
+.nav1{
+  
 }
