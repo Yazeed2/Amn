@@ -38,11 +38,11 @@ export default class Home extends Component {
                             <button class="button" style={{ marginRight: '0%', }}>  إنضم لنا </button>
                         </div>
                     </div>
-                    <img src={Video} style={{ width: '150%', marginLeft: '12%' }} />
+                    <img src={Video} style={{ width: '1000x', marginLeft: '12%' }} />
 
 
                     <div style={{ width: "fit-content", marginLeft: "-90px" }}>
-                        <img src={photo}   />
+                        <img src={photo} style={{width:'600px', hight: '600px'}}  />
                     </div>
 
                 </Container>

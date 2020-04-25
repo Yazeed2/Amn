@@ -21,7 +21,7 @@ class Contactus extends React.Component {
     render() {
         return (
             <div  dir="rtl">
-                <img src={Contact} style={{ width: "50%" }} />
+                <img src={Contact} style={{ width: "800px" }} />
 
                 <div className="Contact" >
                     <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
