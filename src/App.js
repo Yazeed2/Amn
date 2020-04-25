@@ -4,15 +4,39 @@ import logo from './logo.svg';
 import './App.css';
 import Nav from './Nav'
 import Footer from './Footer'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import RegisterC from './components/RegisterC'
+import User from './components/User'
+import Drivers from './components/Drivers'
+import Login from './components/Login'
+import Register from './components/Register'
 
 function App() {
   return (
-    <div className="App">
-      <Nav />
+    <Router>
+  
+
+    <Route exact path='/' render={(props) =><>
+
+      <Nav {...props}/>
       <Home />
       <Footer />
+ </> }/> 
+    <Route  path='/user/:id' render={(props) => <User {...props} /> }  />
+    <Route  path='/driver/:id' render={(props) => <Drivers {...props} /> }  />
+       
+    <Route  path='/login' render={(props) => <Login {...props} /> }  />
+    <Route  path='/register' render={(props) => <Register {...props} /> }  />
+    {/* <Route  path='/registerC' render={(props) => <RegisterC {...props} /> }  /> */}
 
-    </div>
+       
+        </Router>
+
   );
 }
 
