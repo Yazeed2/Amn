@@ -6,6 +6,8 @@ import Contactus from './Contactus'
 import './Contactus.css';
 import Nav from './Nav'
 import Footer from './Footer'
+import Profile from './Profile'
+import { Route, BrowserRouter, Switch, Link } from 'react-router-dom'
 
 import {
   BrowserRouter as Router,
@@ -37,13 +39,16 @@ function App() {
       <FAQ />
       <Contactus />
       <Footer />
+
  </> }/> 
     <Route  path='/user/:id' render={(props) => <User {...props} /> }  />
     <Route  path='/driver/:id' render={(props) => <Drivers {...props} /> }  />
-       
+       <Route path="/Profile" component={Profile} />
+
     <Route  path='/login' render={(props) => <Login {...props} /> }  />
     <Route  path='/register' render={(props) => <Register {...props} /> }  />
     {/* <Route  path='/registerC' render={(props) => <RegisterC {...props} /> }  /> */}
+
 
        
         </Router>
