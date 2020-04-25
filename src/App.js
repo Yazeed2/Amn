@@ -7,14 +7,7 @@ import './Contactus.css';
 import Nav from './Nav'
 import Footer from './Footer'
 import Profile from './Profile'
-import { Route, BrowserRouter, Switch, Link } from 'react-router-dom'
-
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import { Route, BrowserRouter, Switch, Link, Router } from 'react-router-dom'
 import RegisterC from './components/RegisterC'
 import User from './components/User'
 import Drivers from './components/Drivers'
