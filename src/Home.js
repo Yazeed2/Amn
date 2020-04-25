@@ -2,9 +2,10 @@ import React, { Component } from 'react'
 import { Input, Menu, Container, Grid, GridRow } from 'semantic-ui-react'
 //import "semantic-ui-css/semantic.min.css"
 import App from './App'
-import logo from './images/logo.jpeg'
+import logo1 from './images/logo1.jpeg'
 import Video from './images/Video.jpeg'
 import photo from './images/photo.jpeg'
+import a from './images/a.jpeg'
 
 
 
@@ -26,39 +27,29 @@ export default class Home extends Component {
 
 
 
-                <Container className='a'>
-                    <Grid columns={2} divided reversed='mobile'>
-                        <Grid.Row>
+                <Container className='a' >
+                    <div className="logos">
 
-                            <Grid.Column>
+                        <img src={a} style={{marginTop:'60%'}}/>
 
-                            <img src={logo} />
-                            </Grid.Column>
-
-
-                            <Grid.Column>
-
-                           
-                                <p>
-                                    <h1>لأننا نهتم بأن تصلك شٌحنتك <br /> بشكل آمن</h1>
-
-                                </p>
-                            </Grid.Column>
-                        </Grid.Row>
-                    </Grid>
-
-                    <img src={Video} />
+                        <img src={logo1} />
+                        <div>
+                            <button class="button" style={{ marginLeft: '30%' }}>شاهد الفديو</button>
+                            <button class="button" style={{ marginRight: '0%', }}>  إنضم لنا </button>
+                        </div>
+                    </div>
+                    <img src={Video} style={{ width: '150%', marginLeft: '12%' }} />
 
 
-
-                    <img src={photo}  style={{mrginRight:'40%'}}/>
-
+                    <div style={{ width: "fit-content", marginLeft: "-90px" }}>
+                        <img src={photo}   />
+                    </div>
 
                 </Container>
 
                 <Container>
 
-                    
+
                 </Container>
 
             </div>
