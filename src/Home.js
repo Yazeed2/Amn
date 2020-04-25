@@ -30,18 +30,19 @@ export default class Home extends Component {
                 <Container className='a' >
                     <div className="logos">
 
-                        <img src={a} />
+                        <img src={a} style={{marginTop:'60%'}}/>
 
                         <img src={logo1} />
-                        <button class="button" style={{marginLeft:'30%'}}>  إنضم لنا </button>
-                        <button class="button" style={{marginRight:'%'}}>شاهد الفديو</button>
-
+                        <div>
+                            <button class="button" style={{ marginLeft: '30%' }}>شاهد الفديو</button>
+                            <button class="button" style={{ marginRight: '0%', }}>  إنضم لنا </button>
+                        </div>
                     </div>
                     <img src={Video} style={{ width: '150%', marginLeft: '12%' }} />
 
 
                     <div style={{ width: "fit-content", marginLeft: "-90px" }}>
-                        <img src={photo} />
+                        <img src={photo}   />
                     </div>
 
                 </Container>
