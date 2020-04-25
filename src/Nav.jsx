@@ -9,29 +9,9 @@ export default class Nav extends Component {
 
     
     render() {
-        const navbarItems = [{
-                        label: " الصفحة الرئيسية",
-                        target: "Home"
-                    }, {
-                        label: "من نحن",
-                        target: "item-2"
-                    }, {
-                        label: "الأسئلة الشائعة",
-                        target: "item-3"
-                    }, {
-                        label: "تواصل معنا ",
-                        target: "item-4"
-                    }, ]
         return (
-
-            
             <div>
-
-
-                
                 <div class="topnav">
-                    
-                    
                 <a  class="active" href="#Sign">تسجيل الدخول </a>
                     <a href="#Signup">تسجيل جديد</a>
                     <a href="#about">تواصل معنا </a>

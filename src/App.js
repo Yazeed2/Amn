@@ -14,7 +14,7 @@ import { Accordion, Icon } from 'semantic-ui-react'
 function App() {
   return (
     <div className="App" style={{ backgroundColor: '#E5E5E5' }}>
-      <Nav />
+      <Nav/>
       <Home />
       <About />
       <FAQ />

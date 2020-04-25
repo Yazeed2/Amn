@@ -29,8 +29,7 @@ export default function Example() {
             <AccordionItem >
                 <AccordionItemHeading>
                     <AccordionItemButton style={{textAlign:'right' }}>
-                    كيف أحصل على الخدمة؟
-                    </AccordionItemButton>
+{"                    كيف أحصل على الخدمة؟           "}                   </AccordionItemButton>
                 </AccordionItemHeading>
                 <AccordionItemPanel>
                     <p>
