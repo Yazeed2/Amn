@@ -28,27 +28,35 @@ function App() {
  
 
   return (
-
     <div className="App" style={{ backgroundColor: '#E5E5E5' }}>
-      <Router>
-        <Route exact path='/' render={(props) => <>
 
-          <Nav {...props} />
-          <Home />
-          <About />
-          <FAQ />
-          <Contactus />
-          <Footer />
-        </>} />
-        <Route path='/user/:id' render={(props) => <User {...props} />} />
-        <Route path='/driver/:id' render={(props) => <Drivers {...props} />} />
-        <Route path="/Profile" component={Profile} />
-        <Route path='/login' render={(props) => <Login {...props} />} />
-        <Route path='/register' render={(props) => <Register {...props} />} />
-        {/* <Route  path='/registerC' render={(props) => <RegisterC {...props} /> }  /> */}
+    <Router>
+  
 
-      </Router>
-    </div>
+    <Route exact path='/' render={(props) =><>
+
+      <Nav {...props}/>
+      <Home />
+      <About />
+      <FAQ />
+      <Contactus />
+      <Footer />
+
+ </> }/> 
+    <Route  path='/user/:id' render={(props) => <User {...props} /> }  />
+    <Route  path='/driver/:id' render={(props) => <Drivers {...props} /> }  />
+       <Route path="/Profile" component={Profile} />
+       <Route path="/loading" component={Loading} />
+
+    <Route  path='/login' render={(props) => <Login {...props} /> }  />
+    <Route  path='/logedin' render={(props) => <Logedin {...props} /> }  />
+    <Route  path='/register' render={(props) => <Register {...props} /> }  />
+    {/* <Route  path='/registerC' render={(props) => <RegisterC {...props} /> }  /> */}
+
+
+       
+        </Router>
+        </div>
   );
 }
 

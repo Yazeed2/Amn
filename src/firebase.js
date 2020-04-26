@@ -16,7 +16,7 @@ var firebaseConfig = {
   firebase.initializeApp(firebaseConfig);
   var db = firebase.firestore()
 export const check = (id, set)=> {
-    db.collection('users').doc(id).get()
+    db.collection('clients').doc(id).get()
      .then(data => {
          if(data.exists){ 
              set(true)  
@@ -28,7 +28,7 @@ export const check = (id, set)=> {
 }   
 
 export const getData = (id, set)=> { 
-    db.collection('users').doc(id).get()
+    db.collection('clients').doc(id).get()
     .then(data => {
         if(data.exists){ 
             set(data.data())  
@@ -129,3 +129,16 @@ export const loginUser = (userInfo, history) => {
       });
     
     }
+
+
+export const createUrl = (email, name, set) =>{
+    db.collection('clients').add({
+        name,
+        email
+    })
+    .then(snap => {
+       set(snap.id)
+     
+    
+    })
+}
