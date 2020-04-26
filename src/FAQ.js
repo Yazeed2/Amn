@@ -16,9 +16,6 @@ import 'react-accessible-accordion/dist/fancy-example.css';
 
 export default function Example() {
 
-
-
-
     return (
         <div className="FAQ" style={{ marginBottom: '10%' }} >
 
