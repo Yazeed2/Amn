@@ -40,13 +40,8 @@ export default class Register extends Component {
         
         return (
             <>
-<<<<<<< HEAD
             <Nav {...this.props} />
             <div className="register" >
-=======
-            <Nav/>
-            <div className="register" dir="rtl">
->>>>>>> 7495a5b44904279b5b081d6138ecf2d91d391d9f
                 {/* <div className="logo">
 
             <img src={logo} alt="logo"/>

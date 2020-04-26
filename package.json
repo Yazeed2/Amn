@@ -19,12 +19,7 @@
     "react-scroll": "^1.7.16",
     "react-scrolling-nav": "^1.1.5",
     "semantic-ui-react": "^0.88.2",
-<<<<<<< HEAD
     "sweetalert2": "^9.10.12"
-=======
-    "sweetalert2": "^9.10.12",
-    "react-scrolling-nav": "^1.1.5"
->>>>>>> 7495a5b44904279b5b081d6138ecf2d91d391d9f
   },
   "scripts": {
     "start": "react-scripts start",

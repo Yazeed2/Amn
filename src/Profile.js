@@ -4,14 +4,6 @@ import './Profile.css'
 import Nav from './Nav'
 
 
-<<<<<<< HEAD
-// const options = [
-//   { key: 'f', text: 'Fedex', value: 'Fedex' },
-//   { key: 'a', text: 'Aramex', value: 'Aramex' },
-//   { key: 'z', text: 'Zajil', value: 'Zajil' },
-// ]
-=======
->>>>>>> 7495a5b44904279b5b081d6138ecf2d91d391d9f
 
 class FormExampleFieldControl extends Component {
   state = {}
@@ -37,11 +29,7 @@ class FormExampleFieldControl extends Component {
             label='اسم صاحب الشحنة'
             placeholder='اسم صاحب الشحنة'
           />
-<<<<<<< HEAD
-
-=======
           
->>>>>>> 7495a5b44904279b5b081d6138ecf2d91d391d9f
         </Form.Group>
         <Form.Group inline style={{width:'110%' , margin: '2% auto', paddingtop:'50px'}}>
           <label> إسم الشركة </label>
