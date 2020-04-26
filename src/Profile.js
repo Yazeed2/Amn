@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 import { Button, Checkbox,Form, Input, Radio, Select, TextArea,} from 'semantic-ui-react'
 import './Profile.css'
 
-const options = [
-  { key: 'f', text: 'Fedex', value: 'Fedex' },
-  { key: 'a', text: 'Aramex', value: 'Aramex' },
-  { key: 'z', text: 'Zajil', value: 'Zajil' },
-]
+// const options = [
+//   { key: 'f', text: 'Fedex', value: 'Fedex' },
+//   { key: 'a', text: 'Aramex', value: 'Aramex' },
+//   { key: 'z', text: 'Zajil', value: 'Zajil' },
+// ]
 
 class FormExampleFieldControl extends Component {
   state = {}
@@ -28,12 +28,7 @@ class FormExampleFieldControl extends Component {
             label='اسم صاحب الشحنة'
             placeholder='اسم صاحب الشحنة'
           />
-          <Form.Field
-            control={Select}
-            label='اسم الشركة'
-            options={options}
-            placeholder='اسم الشركة'
-          />
+
         </Form.Group>
         <Form.Group inline>
           <label>عدد الشحنات</label>
