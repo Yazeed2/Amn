@@ -7,7 +7,7 @@ import './Contactus.css';
 import Nav from './Nav'
 import Footer from './Footer'
 import Profile from './Profile'
-import { Route, BrowserRouter, Switch, Link, Router } from 'react-router-dom'
+import { Route, BrowserRouter, Switch, Link } from 'react-router-dom'
 import RegisterC from './components/RegisterC'
 import User from './components/User'
 import Drivers from './components/Drivers'
@@ -21,7 +21,7 @@ function App() {
   return (
         <div className="App" style={{ backgroundColor: '#E5E5E5' }}>
 
-    <Router>
+    <BrowserRouter>
   
 
     <Route exact path='/' render={(props) =><>
@@ -44,7 +44,7 @@ function App() {
 
 
        
-        </Router>
+        </BrowserRouter>
 </div>
   );
 }

@@ -29,7 +29,7 @@ export default class Nav extends Component {
                     <a href="#about">تواصل معنا </a>
                     <a href="#news">من نحن </a>
                     <a href="#contact">الأسئلة الشائعة</a>
-                    <a href="#profile">صفحة المستخدم </a>
+                    <a onClick={()=> this.go('/Profile')}>صفحة المستخدم </a>
                
                  
                     <a  href="#home" > الصفحة الرئيسية </a>
