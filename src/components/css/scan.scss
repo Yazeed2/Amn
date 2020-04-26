@@ -1,0 +1,20 @@
+.scan {
+    background-color: rgb(54, 175, 201);
+    height: 100vh;
+    img{
+        widows: 70%
+    }
+    h1{
+        color: white;
+        margin-top: 40px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .scan {
+     
+        img{
+            margin-top: 20vh;
+            width:100%
+        }
+    }
+}

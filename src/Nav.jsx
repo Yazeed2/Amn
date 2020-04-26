@@ -15,12 +15,7 @@ export default class Nav extends Component {
     
     render() {
         return (
-
-            
             <div>
-
-
-                
                 <div class="topnav">
 
                 <a  class="active" onClick={()=> this.go('/login')}>تسجيل الدخول </a>
@@ -29,6 +24,7 @@ export default class Nav extends Component {
                     <a href="#about">تواصل معنا </a>
                     <a href="#news">من نحن </a>
                     <a href="#contact">الأسئلة الشائعة</a>
+                    <a href="#profile">صفحة المستخدم </a>
                
                  
                     <a  href="#home" > الصفحة الرئيسية </a>

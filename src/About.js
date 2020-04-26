@@ -51,7 +51,7 @@ export default class Home extends Component {
     </p>
                 </div>
 
-                <img src={photo} style={{ width: '40%', hight: '20%', marginRight: '60%' }} />
+                <img src={photo} style={{ width: '600px', hight: '600px', marginRight: '68%' }} />
 
                 <br />
                 <br />

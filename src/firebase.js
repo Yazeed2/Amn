@@ -1,5 +1,6 @@
 import firebase, { firestore } from 'firebase'
 import Swal from 'sweetalert2'
+var thisUser = 'sddfs'
 
 var firebaseConfig = {
     apiKey: "AIzaSyDh0nTkDzhKrXXkplr_y9iODuFB6oIauRo",
@@ -82,8 +83,49 @@ export const createUser = (userData, history)=> {
       });    
 
 }
+firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+        thisUser = user
+    } else {
+        // No user is signed in.
+        console.log('There is no logged in user');
+    } 
+});
+export const getUserInfo = (userId, set) => {
 
-
-export const getUserInfo = () => {
-   return firebase.auth().currentUser
+   db.collection('users').doc(userId).get()
+   .then(snap => {
+       if(snap.exists){ 
+           snap = snap.data()
+           console.log('heelo');
+           
+           set(snap)
+       }
+   }
+   )
 }
+export const auth = firebase.auth()
+
+export const loginUser = (userInfo, history) => {
+    let {email, password} = userInfo
+    firebase.auth().signInWithEmailAndPassword(email, password)
+    .then(back => { 
+        Swal.fire(
+            'Done!',
+            'logged in successfully!',
+            'success'
+          )        
+          history.push('/logedin')    
+    })
+    .catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: errorMessage,
+          })  
+      });
+    
+    }

@@ -5,6 +5,8 @@ import logo from '../images/logo.jpeg'
 import Swal from 'sweetalert2'
 import {createUser} from '../firebase'
 
+
+
 export default class Register extends Component {
     state ={ 
         iscompaney: false
@@ -18,7 +20,6 @@ export default class Register extends Component {
     onSubmit =  () => {
         if(this.state.email && this.state.password && this.state.password2 && (this.state.fullname || this.state.companyName)){ 
             if(this.state.password === this.state.password2) {
-                
              createUser(this.state, this.props.history)
             }else{
                 Swal.fire({
@@ -39,8 +40,8 @@ export default class Register extends Component {
         
         return (
             <>
-            <Nav/>
-            <div className="register">
+            <Nav {...this.props} />
+            <div className="register" >
                 {/* <div className="logo">
 
             <img src={logo} alt="logo"/>
