@@ -82,3 +82,8 @@ export const createUser = (userData, history)=> {
       });    
 
 }
+
+
+export const getUserInfo = () => {
+   return firebase.auth().currentUser
+}

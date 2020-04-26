@@ -21,6 +21,7 @@ import Register from './components/Register'
 import FAQ from './FAQ'
 import About from './About'
 import { Accordion, Icon } from 'semantic-ui-react'
+import Logedin from "./components/Logedin";
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
     <Route  path='/driver/:id' render={(props) => <Drivers {...props} /> }  />
        
     <Route  path='/login' render={(props) => <Login {...props} /> }  />
+    <Route  path='/logedin' render={(props) => <Logedin {...props} /> }  />
     <Route  path='/register' render={(props) => <Register {...props} /> }  />
     {/* <Route  path='/registerC' render={(props) => <RegisterC {...props} /> }  /> */}
 
