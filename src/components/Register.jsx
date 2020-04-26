@@ -40,8 +40,13 @@ export default class Register extends Component {
         
         return (
             <>
+<<<<<<< HEAD
             <Nav {...this.props} />
             <div className="register" >
+=======
+            <Nav/>
+            <div className="register" dir="rtl">
+>>>>>>> 7495a5b44904279b5b081d6138ecf2d91d391d9f
                 {/* <div className="logo">
 
             <img src={logo} alt="logo"/>
@@ -52,13 +57,13 @@ export default class Register extends Component {
 
                 <input required onChange={this.onChange} placeholder="Email" type="email" name='email'/>
                 {this.state.iscompaney?
-                <input onChange={this.onChange} placeholder="Name of institution" type="text" name="companyName" />:
-                <input onChange={this.onChange} placeholder="Fullname" type="text" name="fullname" />}
-                <input onChange={this.onChange} placeholder="Password" type="password" name="password"/>
-                <input onChange={this.onChange} placeholder="repeat password" type="password" name="password2"/>
+                <input onChange={this.onChange} placeholder="إسم الشركة" type="text" name="إسم الشركة" />:
+                <input onChange={this.onChange} placeholder="الإسم كامل" type="text" name="الإسم كامل" />}
+                <input onChange={this.onChange} placeholder="الرقم السري " type="password" name="الرقم السري"/>
+                <input onChange={this.onChange} placeholder="إعادة إدخال الرقم السري " type="password" name="إعادة إدخال الرقم السري"/>
                 <div className="submit">
 
-                <button onClick={this.onSubmit} type="submit" >Submit</button>
+                <button onClick={this.onSubmit} type="submit" >إرسال</button>
 </div>
             <a onClick={()=> this.setState({iscompaney:!this.state.iscompaney})} >or register as a {this.state.iscompaney?'Driver': 'Company'}</a>
             </div>

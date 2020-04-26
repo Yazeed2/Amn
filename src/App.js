@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Home from './Home'
-import logo from './logo.svg';
 import './App.css';
 import Contactus from './Contactus'
 import './Contactus.css';
@@ -29,8 +28,8 @@ function App() {
  
 
   return (
-        <div className="App" style={{ backgroundColor: '#E5E5E5' }}>
 
+<<<<<<< HEAD
     <Router>
   
 
@@ -58,6 +57,28 @@ function App() {
        
         </Router>
 </div>
+=======
+    <div className="App" style={{ backgroundColor: '#E5E5E5' }}>
+      <Router>
+        <Route exact path='/' render={(props) => <>
+
+          <Nav {...props} />
+          <Home />
+          <About />
+          <FAQ />
+          <Contactus />
+          <Footer />
+        </>} />
+        <Route path='/user/:id' render={(props) => <User {...props} />} />
+        <Route path='/driver/:id' render={(props) => <Drivers {...props} />} />
+        <Route path="/Profile" component={Profile} />
+        <Route path='/login' render={(props) => <Login {...props} />} />
+        <Route path='/register' render={(props) => <Register {...props} />} />
+        {/* <Route  path='/registerC' render={(props) => <RegisterC {...props} /> }  /> */}
+
+      </Router>
+    </div>
+>>>>>>> 7495a5b44904279b5b081d6138ecf2d91d391d9f
   );
 }
 

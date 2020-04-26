@@ -4,30 +4,25 @@ import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 import { scroller } from 'react-scroll';
 
 
-
 export default class Nav extends Component {
 
-    go = (url)=> { 
+    go = (url) => {
         this.props.history.push(url)
     }
-    
-
-    
     render() {
         return (
             <div>
                 <div class="topnav">
-
-                <a  class="active" onClick={()=> this.go('/login')}>تسجيل الدخول </a>
-                    <a onClick={()=> this.go('/register')}>تسجيل جديد</a>
-
-                    <a href="#about">تواصل معنا </a>
+                    <a href="#home" > الصفحة الرئيسية </a>
                     <a href="#news">من نحن </a>
                     <a href="#contact">الأسئلة الشائعة</a>
+
+                    <a href="#about">تواصل معنا </a>
                     <a href="#profile">صفحة المستخدم </a>
-               
-                 
-                    <a  href="#home" > الصفحة الرئيسية </a>
+                    <a onClick={() => this.go('/register')}>تسجيل جديد</a>
+                    <a class="active" onClick={() => this.go('/login')}>تسجيل الدخول </a>
+                    {/* <button class="button button1">EN</button> */}
+
                 </div>
             </div>
         )
@@ -47,7 +42,7 @@ export default class Nav extends Component {
 
 
 // class Nav extends Component {
-    
+
 //     render() {
 //         const navbarItems = [{
 //             label: " الصفحة الرئيسية",
@@ -76,7 +71,7 @@ export default class Nav extends Component {
 //                     </ElementsWrapper>
 //                 </div>
 
-                
+
 //             </div>
 //         );
 //     }

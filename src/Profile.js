@@ -1,12 +1,17 @@
 import React, { Component } from 'react'
 import { Button, Checkbox,Form, Input, Radio, Select, TextArea,} from 'semantic-ui-react'
 import './Profile.css'
+import Nav from './Nav'
 
+
+<<<<<<< HEAD
 // const options = [
 //   { key: 'f', text: 'Fedex', value: 'Fedex' },
 //   { key: 'a', text: 'Aramex', value: 'Aramex' },
 //   { key: 'z', text: 'Zajil', value: 'Zajil' },
 // ]
+=======
+>>>>>>> 7495a5b44904279b5b081d6138ecf2d91d391d9f
 
 class FormExampleFieldControl extends Component {
   state = {}
@@ -16,45 +21,53 @@ class FormExampleFieldControl extends Component {
   render() {
     const { value } = this.state
     return (
+        
+        <div className="profile">
+
       <Form>
         <Form.Group widths='equal'>
-          <Form.Field
+          <Form.Field inline style={{width:'110%' , margin: '0 auto', paddingtop:'50px', borderradius:'100px' , border:'solid 1px#70B0B5', padding:'1px'
+          , border: 'none'}}
             control={Input}
             label='اسم السائق'
             placeholder='اسم السائق'
           />
-          <Form.Field
+          <Form.Field inline style={{width:'110%' , margin: '2% auto', paddingtop:'50px'}}
             control={Input}
             label='اسم صاحب الشحنة'
             placeholder='اسم صاحب الشحنة'
           />
+<<<<<<< HEAD
 
+=======
+          
+>>>>>>> 7495a5b44904279b5b081d6138ecf2d91d391d9f
         </Form.Group>
-        <Form.Group inline>
-          <label>عدد الشحنات</label>
-          <Form.Field
+        <Form.Group inline style={{width:'110%' , margin: '2% auto', paddingtop:'50px'}}>
+          <label> إسم الشركة </label>
+          <Form.Field inline style={{width:'90%' , margin: '2% auto', paddingtop:'50px'}}
             control={Radio}
-            label='واحدة'
+            label='Fedex'
             value='1'
             checked={value === '1'}
             onChange={this.handleChange}
           />
-          <Form.Field
+          <Form.Field inline style={{width:'90%' , margin: '2% auto', paddingtop:'50px'}}
             control={Radio}
-            label='اثنتان'
+            label='Aramex'
             value='2'
             checked={value === '2'}
             onChange={this.handleChange}
           />
-          <Form.Field
+          <Form.Field inline style={{width:'90%' , margin: '2% auto', paddingtop:'50px'}}
             control={Radio}
-            label='ثلاثة'
+            label='Zajil'
             value='3'
             checked={value === '3'}
             onChange={this.handleChange}
           />
         </Form.Group>
-        <Form.Field
+        <Form.Field inline style={{width:'110%' , margin: '3% auto', paddingtop:'50px'}}
           control={TextArea}
           label='رابط الباركود'
           placeholder='...........'
@@ -63,8 +76,15 @@ class FormExampleFieldControl extends Component {
           control={Checkbox}
           label='أتعهد بأن أوصلها بشكل آمن'
         />
-        <Form.Field control={Button}>Submit</Form.Field>
-      </Form>
+         
+    
+ <Form.Field inline style={{width:'50%' , margin: '0 auto', paddingtop:'50px'}}
+            onClick={this.onSubmit} control={Button}>Submit</Form.Field>
+       
+       </Form>
+       </div>
+     
+     
     )
   }
 }
