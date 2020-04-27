@@ -7,6 +7,7 @@ import Video from './images/Video.jpeg'
 import photo from './images/photo.jpeg'
 import a from './images/a.jpeg'
 import { getUserInfo } from './firebase'
+import v from './images/v.mp4'
 
 
 
@@ -31,7 +32,7 @@ export default class Home extends Component {
                 <Container className='a' >
                     <div className="logos">
 
-                        <img src={a} style={{marginTop:'60%'}}/>
+                        <img src={a} style={{ marginTop: '60%' }} />
 
                         <img src={logo1} />
                         <div>
@@ -39,11 +40,17 @@ export default class Home extends Component {
                             <button class="button" style={{ marginRight: '0%', }}>  إنضم لنا </button>
                         </div>
                     </div>
-                    <img src={Video} style={{ width: '1000x', marginLeft: '12%' }} />
 
 
-                    <div style={{ width: "fit-content", marginLeft: "-90px" }}>
-                        <img src={photo} style={{width:'600px', hight: '600px'}}  />
+                    <div>
+                    <video     className="V1"  controls="true" autoplay="true"  >
+                    <source src={v}  />
+                    </video>
+                 </div>
+
+
+                  <div style={{ width: "fit-content", marginLeft: "-90px" }}>
+                        <img src={photo} style={{ width: '600px', hight: '600px' }} />
                     </div>
 
                 </Container>
