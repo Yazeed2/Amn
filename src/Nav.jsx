@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Input, Menu, Container } from 'semantic-ui-react'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 import { scroller } from 'react-scroll';
+import './Nav.css'
 
 
 export default class Nav extends Component {
@@ -11,7 +12,7 @@ export default class Nav extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="navb">
                 <div class="topnav">
                     <a href="#home" > الصفحة الرئيسية </a>
                     <a href="#news">من نحن </a>

@@ -40,7 +40,7 @@ export default class Register extends Component {
         return (
             <>
             <Nav/>
-            <div className="register" dir="rtl">
+            <div className="register" >
                 {/* <div className="logo">
 
             <img src={logo} alt="logo"/>
