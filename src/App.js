@@ -6,6 +6,7 @@ import './Contactus.css';
 import Nav from './Nav'
 import Footer from './Footer'
 import Profile from './Profile'
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -23,6 +24,7 @@ import { Accordion, Icon } from 'semantic-ui-react'
 
 function App() {
   return (
+
     <div className="App" style={{ backgroundColor: '#E5E5E5' }}>
       <Router>
         <Route exact path='/' render={(props) => <>
